@@ -190,6 +190,27 @@ body {
   color: #75b1e8;
 }
 
+.chat .card {
+  width: 300px;
+  margin: 1rem auto;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.chat .card img {
+  width: 100%;
+}
+.chat .card .info {
+  padding: 5px;
+}
+.chat .card .info .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.chat .card .info button {
+  width: 100%;
+  margin: 1rem 0;
+}
+
 .online,
 .offline,
 .me {
