@@ -11,7 +11,8 @@
       "Here is an example of four buttons:",
       "Here is a misspelled button:",
       "Here is an unexpected button:",
-      "Sorry I only speak in buttons..."
+      "Sorry I only speak in buttons...",
+      "Pick a card... any card"
     ],
     buttons: [
       "Button One",
@@ -109,6 +110,10 @@
         case "Unexpected button":
           indexVar = 5;
           tempId = "#message-buttons-5";
+          break;
+        case "Card":
+          indexVar = 7;
+          tempId = "#message-rich-0";
           break;
         default:
           indexVar = 6;
