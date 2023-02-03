@@ -134,9 +134,6 @@
       return new Date()
         .toLocaleTimeString()
         .replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3");
-    },
-    getRandomItem: function (arr) {
-      return arr[Math.floor(Math.random() * arr.length)];
     }
   };
 
