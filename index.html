@@ -1,3 +1,7 @@
+<head>
+    <meta charset="utf-8">
+    <title>chatBot</title>
+</head>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <div class="container clearfix">
@@ -11,6 +15,7 @@
     <p>Unexpected button</p>
     <p><strong>New:</strong></p><br/>
     <p>Card</p>
+    <p>Rich text</p>
   </div>
   <div class="chat">
     <div class="chat-header clearfix">
@@ -88,45 +93,57 @@
 </script>
 
 <script id="message-buttons-0" type="text/x-handlebars-template">
-  <li>
-    <button>Button one</button>
-  </li>
+    <li>
+        <div class="message my-message button-options">
+            <button>Button one</button>
+        </div>
+    </li>
 </script>
 
 <script id="message-buttons-1" type="text/x-handlebars-template">
-  <li>
-    <button>Button one</button>
-     <button>Button two</button>
-  </li>
+    <li>
+        <div class="message my-message button-options">
+            <button>Button one</button>
+            <button>Button two</button>
+            </div>
+    </li>
 </script>
 
 <script id="message-buttons-2" type="text/x-handlebars-template">
-  <li>
-    <button>Button one</button>
-    <button>Button two</button>
-     <button>Button three</button>
-  </li>
+    <li>
+        <div class="message my-message button-options">
+            <button>Button one</button>
+            <button>Button two</button>
+            <button>Button three</button>
+            </div>
+    </li>
 </script>
 
 <script id="message-buttons-3" type="text/x-handlebars-template">
-  <li>
-    <button>Button one</button>
-    <button>Button two</button>
-    <button>Button three</button>
-     <button>Button four</button>
-  </li>
+    <li>
+        <div class="message my-message button-options">
+            <button>Button one</button>
+            <button>Button two</button>
+            <button>Button three</button>
+            <button>Button four</button>
+            </div>
+    </li>
 </script>
 
 <script id="message-buttons-4" type="text/x-handlebars-template">
-  <li>
-   <button>Missplled button</button>
-  </li>
+    <li>
+        <div class="message my-message button-options">
+            <button>Missplled button</button>
+            </div>
+    </li>
 </script>
 
 <script id="message-buttons-5" type="text/x-handlebars-template">
-  <li>
-    <button>Unexpected button</button>
-  </li>
+    <li>
+        <div class="message my-message button-options">
+            <button>Unexpected button</button>
+            </div>
+    </li>
 </script>
 
 <script id="message-rich-0" type="text/x-handlebars-template">
@@ -140,6 +157,35 @@
       </div>
     </div>
   </li>
+</script>
+
+<script id="message-rich-1" type="text/x-handlebars-template">
+    <li>
+        <div class="message-data">
+            <span class="message-data-name"><i class="fa fa-circle online"></i> Button Bot 3000</span>
+            <span class="message-data-time">{{time}}, Today</span>
+        </div>
+        <div class="message my-message">
+            <strong>This is a strong statement:</strong>
+            <p>Here is a list of things I like:</p>
+            <p>
+                <ul>
+                    <li>Guitar</li>
+                    <li>Guitar</li>
+                    <li>Guitar</li>
+                    <li>Guitar</li>
+                </ul>
+            </p>
+            <p>
+                <a href="#">View more things I like!</a>
+            </p>
+            <p>Dont <i>Really</i> click on the link above.</p>
+            <p><u>Unless you want to?</u></p>
+            <p><del>Perhaps you should?</del></p>
+            <p>😀😁😎🤐😯😯😫🥱😴😛😮🤨😘</p>
+            <p><span style="color:red">red</span><span style="color:blue">blue</span><span style="color:green">green</span><span style="color:purple">purple</span></p>
+        </div>
+    </li>
 </script>
 
 <script id="message-options" type="text/x-handlebars-template">
