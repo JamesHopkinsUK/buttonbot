@@ -7,15 +7,17 @@
 <div class="container clearfix">
   <div class="input-items">
     <h4>You can say:</h4>
+    <p><strong>Buttons:</strong></p>
     <p>One button</p>
     <p>Two buttons</p>
     <p>Three buttons</p>
     <p>Four buttons</p>
     <p>Misspelled button</p>
     <p>Unexpected button</p>
-    <p><strong>New:</strong></p><br/>
+    <p><strong>Rich text:</strong></p><br/>
     <p>Card</p>
     <p>Rich text</p>
+    <p>Text with button</p>
   </div>
   <div class="chat">
     <div class="chat-header clearfix">
@@ -44,14 +46,18 @@
             <span class="message-data-time">10:20 AM, Today</span>
           </div>
           <div class="message my-message">
-            You can say:<br>
-            One button<br>
-            Two buttons<br>
-            Three buttons<br>
-            Four buttons<br>
-            Misspelled button<br>
-            Unexpected button<br>
-            Card
+              <p>You can say:</p>
+              <q>
+                  One button,
+                  Two buttons,
+                  Three buttons,
+                  Four buttons,
+                  Misspelled button,
+                  Unexpected button,
+                  Card,
+                  Rich text,
+                  Text with button
+              </q>
           </div>
         </li>
       </ul>
@@ -184,6 +190,21 @@
             <p><del>Perhaps you should?</del></p>
             <p>😀😁😎🤐😯😯😫🥱😴😛😮🤨😘</p>
             <p><span style="color:red">red</span><span style="color:blue">blue</span><span style="color:green">green</span><span style="color:purple">purple</span></p>
+        </div>
+    </li>
+</script>
+
+<script id="message-rich-2" type="text/x-handlebars-template">
+    <li>
+        <div class="message-data">
+            <span class="message-data-name"><i class="fa fa-circle online"></i> Button Bot 3000</span>
+            <span class="message-data-time">{{time}}, Today</span>
+        </div>
+        <div class="message my-message">
+            <p>Here is a joke about buttons:</p>
+            <p>Why was the phone angry?</p>
+            <br />
+            <button>Someone pushed its buttons</button>
         </div>
     </li>
 </script>
