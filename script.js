@@ -12,7 +12,8 @@
       "Here is a misspelled button:",
       "Here is an unexpected button:",
       "Sorry I only speak in buttons...",
-      "Pick a card... any card"
+      "Pick a card... any card",
+      "Okay... Okay... One moment..."
     ],
     buttons: [
       "Button One",
@@ -64,7 +65,7 @@
         var buttonResponse = Handlebars.compile($(tempId).html());
         var contextbuttonResponse = {
           buttons: this.buttons[indexVar]
-        };
+          };
 
         setTimeout(
           function () {
@@ -85,7 +86,7 @@
 
     addMessage: function () {
       this.messageToSend = this.$textarea.val();
-      const expr = this.messageToSend;
+      const expr = this.messageToSend.trim();
       switch (expr) {
         case "One button":
           indexVar = 0;
@@ -114,7 +115,11 @@
         case "Card":
           indexVar = 7;
           tempId = "#message-rich-0";
-          break;
+              break;
+        case "Rich text":
+            indexVar = 8;
+            tempId = "#message-rich-1";
+            break;
         default:
           indexVar = 6;
           tempId = "#message-options";
