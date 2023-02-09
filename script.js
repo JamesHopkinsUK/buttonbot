@@ -13,7 +13,8 @@
       "Here is an unexpected button:",
       "Sorry I only speak in buttons...",
       "Pick a card... any card",
-      "Okay... Okay... One moment..."
+      "Okay... Okay... One moment...",
+      "Because you asked so nicely"
     ],
     buttons: [
       "Button One",
@@ -111,7 +112,7 @@
         case "Unexpected button":
           indexVar = 5;
           tempId = "#message-buttons-5";
-          break;
+            break;
         case "Card":
           indexVar = 7;
           tempId = "#message-rich-0";
@@ -119,6 +120,10 @@
         case "Rich text":
             indexVar = 8;
             tempId = "#message-rich-1";
+            break;
+        case "Text with button":
+            indexVar = 9;
+            tempId = "#message-rich-2";
             break;
         default:
           indexVar = 6;
