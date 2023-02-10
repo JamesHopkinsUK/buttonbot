@@ -124,7 +124,11 @@
         case "Text with button":
             indexVar = 9;
             tempId = "#message-rich-2";
-            break;
+              break;
+          case "Nested order":
+              indexVar = 9;
+              tempId = "#message-rich-3";
+              break;
         default:
           indexVar = 6;
           tempId = "#message-options";
