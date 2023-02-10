@@ -18,6 +18,7 @@
     <p>Card</p>
     <p>Rich text</p>
     <p>Text with button</p>
+    <p>Nested order</p>
   </div>
   <div class="chat">
     <div class="chat-header clearfix">
@@ -190,6 +191,30 @@
             <p><del>Perhaps you should?</del></p>
             <p>😀😁😎🤐😯😯😫🥱😴😛😮🤨😘</p>
             <p><span style="color:red">red</span><span style="color:blue">blue</span><span style="color:green">green</span><span style="color:purple">purple</span></p>
+        </div>
+    </li>
+</script>
+
+<script id="message-rich-3" type="text/x-handlebars-template">
+    <li>
+        <div class="message-data">
+            <span class="message-data-name"><i class="fa fa-circle online"></i> Button Bot 3000</span>
+            <span class="message-data-time">{{time}}, Today</span>
+        </div>
+        <div class="message my-message">
+            <div class="parent">
+                This should show first
+                <div class="child">
+                    I am child one
+                </div>
+                <div class="child">
+                    I am child two
+                </div>
+                <div class="child">
+                    I am child three
+                </div>
+                This should show last
+            </div>
         </div>
     </li>
 </script>
