@@ -220,6 +220,9 @@ u {
 }
 .chat .card .info {
   padding: 5px;
+  background: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .chat .card .info .title {
   font-size: 18px;
