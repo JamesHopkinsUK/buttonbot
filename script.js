@@ -15,7 +15,7 @@
       "Pick a card... any card",
       "Okay... Okay... One moment...",
       "Because you asked so nicely",
-      "All my buttons are now clickable. Give it a try, you may find something you like!"
+      "Most of my buttons are now clickable. Give it a try, you may find something you like!"
     ],
     buttons: [
       "Button One",
