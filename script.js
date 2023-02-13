@@ -84,7 +84,6 @@
         );
       }
     },
-
     addMessage: function () {
       this.messageToSend = this.$textarea.val();
       const expr = this.messageToSend.trim();
@@ -126,9 +125,13 @@
             tempId = "#message-rich-2";
               break;
           case "Nested order":
-              indexVar = 9;
-              tempId = "#message-rich-3";
-              break;
+            indexVar = 9;
+            tempId = "#message-rich-3";
+             break;
+        case "Clickable buttons":
+          indexVar = 5;
+          tempId = "#message-buttons-6";
+            break;
         default:
           indexVar = 6;
           tempId = "#message-options";
@@ -153,3 +156,10 @@
 
   chat.init();
 })();
+
+function submitText() {
+  var button = event.target;
+  var buttonText = button.innerHTML;
+  document.getElementById("message-to-send").value = buttonText;
+  document.getElementById("submit-button").click();
+}

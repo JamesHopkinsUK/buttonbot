@@ -19,6 +19,7 @@
     <p>Rich text</p>
     <p>Text with button</p>
     <p>Nested order</p>
+    <p>Clickable buttons</p>
   </div>
   <div class="chat">
     <div class="chat-header clearfix">
@@ -67,7 +68,7 @@
 
     <div class="chat-message clearfix">
       <textarea name="message-to-send" id="message-to-send" placeholder="Type your message" rows="3"></textarea>
-      <button>Send</button>
+      <button id="submit-button">Send</button>
 
     </div> <!-- end chat-message -->
 
@@ -151,6 +152,14 @@
             <button>Unexpected button</button>
             </div>
     </li>
+</script>
+
+<script id="message-buttons-6" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message button-options">
+        <button onclick="submitText()">Option One</button>
+      </div>
+  </li>
 </script>
 
 <script id="message-rich-0" type="text/x-handlebars-template">
