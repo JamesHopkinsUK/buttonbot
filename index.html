@@ -23,10 +23,10 @@
   </div>
   <div class="chat">
     <div class="chat-header clearfix">
-      <img src="https://assets.codepen.io/t-1/user-default-avatar.jpg?format=auto&version=0&width=80&height=80" alt="avatar" />
+      <img src="bot-icon.png" alt="avatar" />
 
       <div class="chat-about">
-        <div class="chat-with">Button Bot 3000</div>
+        <div class="chat-with">Amigo 2.0</div>
       </div>
     </div> <!-- end chat-header -->
 
@@ -34,17 +34,17 @@
       <ul>
         <li>
           <div class="message-data">
-            <span class="message-data-name"><i class="fa fa-circle online"></i> Button Bot 3000</span>
+            <span class="message-data-name"><i class="fa fa-circle online"></i>Amigo 2.0</span>
             <span class="message-data-time">10:12 AM, Today</span>
           </div>
           <div class="message my-message">
-            Hello, I am here to help you test some buttons! Let me know what you would like me to show you.
+            Hi, I am Amigo 2.0! I am here to help you test your E2E project.
           </div>
         </li>
 
         <li>
           <div class="message-data">
-            <span class="message-data-name"><i class="fa fa-circle online"></i> Button Bot 3000</span>
+            <span class="message-data-name"><i class="fa fa-circle online"></i>Amigo 2.0</span>
             <span class="message-data-time">10:20 AM, Today</span>
           </div>
           <div class="message my-message">
@@ -91,7 +91,7 @@
 <script id="message-response-template" type="text/x-handlebars-template">
   <li>
     <div class="message-data">
-      <span class="message-data-name"><i class="fa fa-circle online"></i> Button Bot 3000</span>
+      <span class="message-data-name"><i class="fa fa-circle online"></i>Amigo 2.0</span>
       <span class="message-data-time">{{time}}, Today</span>
     </div>
     <div class="message my-message">
@@ -103,7 +103,7 @@
 <script id="message-buttons-0" type="text/x-handlebars-template">
     <li>
         <div class="message my-message button-options">
-            <button>Button one</button>
+            <button onclick="submitText()">One button</button>
         </div>
     </li>
 </script>
@@ -111,8 +111,8 @@
 <script id="message-buttons-1" type="text/x-handlebars-template">
     <li>
         <div class="message my-message button-options">
-            <button>Button one</button>
-            <button>Button two</button>
+            <button onclick="submitText()">One button</button>
+            <button onclick="submitText()">Two buttons</button>
             </div>
     </li>
 </script>
@@ -120,9 +120,9 @@
 <script id="message-buttons-2" type="text/x-handlebars-template">
     <li>
         <div class="message my-message button-options">
-            <button>Button one</button>
-            <button>Button two</button>
-            <button>Button three</button>
+          <button onclick="submitText()">One button</button>
+          <button onclick="submitText()">Two buttons</button>
+            <button onclick="submitText()">Three buttons</button>
             </div>
     </li>
 </script>
@@ -130,10 +130,10 @@
 <script id="message-buttons-3" type="text/x-handlebars-template">
     <li>
         <div class="message my-message button-options">
-            <button>Button one</button>
-            <button>Button two</button>
-            <button>Button three</button>
-            <button>Button four</button>
+          <button onclick="submitText()">One button</button>
+          <button onclick="submitText()">Two buttons</button>
+            <button onclick="submitText()">Three buttons</button>
+            <button onclick="submitText()">Four buttons</button>
             </div>
     </li>
 </script>
@@ -157,7 +157,10 @@
 <script id="message-buttons-6" type="text/x-handlebars-template">
   <li>
       <div class="message my-message button-options">
-        <button onclick="submitText()">Option One</button>
+        <button onclick="submitText()">Four buttons</button>
+        <button onclick="submitText()">Card</button>
+        <button onclick="submitText()">Rich text</button>
+        <button onclick="submitText()">Suprise me</button>
       </div>
   </li>
 </script>
@@ -165,20 +168,46 @@
 <script id="message-rich-0" type="text/x-handlebars-template">
   <li>
     <div class="card my-message">
-        <img src="https://www.w3schools.com/howto/img_avatar.png"     alt="Avatar" title="Brad Jones">
+        <img src="bot-icon.png" alt="Avatar" title="Amigo">
       <div class="info">
-        <div class="title">Brad Jones</div>
-      <p>Architect & Engineer</p>
-        <button>View profile</button>
+        <div class="title">Amigo 2.0</div>
+        <p>Architect & Engineer</p>
+        <button onclick="submitText()">View profile</button>
       </div>
     </div>
+  </li>
+</script>
+
+<script id="message-rich-5" type="text/x-handlebars-template">
+  <li>
+      <div class="message-data">
+          <span class="message-data-name"><i class="fa fa-circle online"></i>Amigo 2.0</span>
+          <span class="message-data-time">{{time}}, Today</span>
+      </div>
+      <div class="message my-message">
+          <img src="200w.gif" alt="Party time">
+      </div>
+  </li>
+</script>
+
+<script id="message-rich-4" type="text/x-handlebars-template">
+  <li>
+      <div class="message-data">
+          <span class="message-data-name"><i class="fa fa-circle online"></i>Amigo 2.0</span>
+          <span class="message-data-time">{{time}}, Today</span>
+      </div>
+      <div class="message my-message">
+          <strong>About Amigo:</strong>
+          <p>Amigo was origionally created as a smart assistant to help with meetings.</p>
+          <p>Although, that didn't work out. So now it helps out the gang to test their current awesome project.</p>
+      </div>
   </li>
 </script>
 
 <script id="message-rich-1" type="text/x-handlebars-template">
     <li>
         <div class="message-data">
-            <span class="message-data-name"><i class="fa fa-circle online"></i> Button Bot 3000</span>
+            <span class="message-data-name"><i class="fa fa-circle online"></i>Amigo 2.0</span>
             <span class="message-data-time">{{time}}, Today</span>
         </div>
         <div class="message my-message">
@@ -207,7 +236,7 @@
 <script id="message-rich-3" type="text/x-handlebars-template">
     <li>
         <div class="message-data">
-            <span class="message-data-name"><i class="fa fa-circle online"></i> Button Bot 3000</span>
+            <span class="message-data-name"><i class="fa fa-circle online"></i>Amigo 2.0</span>
             <span class="message-data-time">{{time}}, Today</span>
         </div>
         <div class="message my-message">
@@ -231,10 +260,10 @@
 <script id="message-rich-2" type="text/x-handlebars-template">
     <li>
         <div class="message-data">
-            <span class="message-data-name"><i class="fa fa-circle online"></i> Button Bot 3000</span>
+            <span class="message-data-name"><i class="fa fa-circle online"></i>Amigo 2.0</span>
             <span class="message-data-time">{{time}}, Today</span>
         </div>
-        <div class="message my-message">
+        <div class="message my-message with-button">
             <p>Here is a joke about buttons:</p>
             <p>Why was the phone angry?</p>
             <br />
@@ -246,7 +275,7 @@
 <script id="message-options" type="text/x-handlebars-template">
   <li>
     <div class="message-data">
-      <span class="message-data-name"><i class="fa fa-circle online"></i> Button Bot 3000</span>
+      <span class="message-data-name"><i class="fa fa-circle online"></i>Amigo 2.0</span>
       <span class="message-data-time">{{time}}, Today</span>
     </div>
     <div class="message my-message">

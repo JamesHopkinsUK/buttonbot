@@ -14,7 +14,8 @@
       "Sorry I only speak in buttons...",
       "Pick a card... any card",
       "Okay... Okay... One moment...",
-      "Because you asked so nicely"
+      "Because you asked so nicely",
+      "All my buttons are now clickable. Give it a try, you may find something you like!"
     ],
     buttons: [
       "Button One",
@@ -128,9 +129,17 @@
             indexVar = 9;
             tempId = "#message-rich-3";
              break;
+             case "View profile":
+              indexVar = 9;
+              tempId = "#message-rich-4";
+               break;
         case "Clickable buttons":
-          indexVar = 5;
+          indexVar = 10;
           tempId = "#message-buttons-6";
+            break;
+        case "Suprise me":
+          indexVar = 9;
+          tempId = "#message-rich-5";
             break;
         default:
           indexVar = 6;
