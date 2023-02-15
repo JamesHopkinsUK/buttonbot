@@ -89,61 +89,65 @@
       this.messageToSend = this.$textarea.val();
       const expr = this.messageToSend.trim();
       switch (expr) {
-        case "One button":
+        case "One button": case "one button":
           indexVar = 0;
           tempId = "#message-buttons-0";
           break;
-        case "Two buttons":
+        case "Two buttons": case "two buttons":
           indexVar = 1;
           tempId = "#message-buttons-1";
           break;
-        case "Three buttons":
+        case "Three buttons": case "three buttons":
           indexVar = 2;
           tempId = "#message-buttons-2";
           break;
-        case "Four buttons":
+        case "Four buttons": case "four buttons":
           indexVar = 3;
           tempId = "#message-buttons-3";
           break;
-        case "Misspelled button":
+        case "Misspelled button": case "misspelled button":
           indexVar = 4;
           tempId = "#message-buttons-4";
-          break;
-        case "Unexpected button":
-          indexVar = 5;
-          tempId = "#message-buttons-5";
             break;
-        case "Card":
-          indexVar = 7;
-          tempId = "#message-rich-0";
+        case "Unexpected button": case "unexpected button":
+            indexVar = 5;
+            tempId = "#message-buttons-5";
+            break;
+        case "Card": case "card":
+            indexVar = 7;
+            tempId = "#message-rich-0";
               break;
-        case "Rich text":
+        case "Card list": case "card list":
+            indexVar = 7;
+            tempId = "#message-rich-7";
+              break;
+        case "Rich text": case "rich text":
             indexVar = 8;
             tempId = "#message-rich-1";
             break;
-        case "Text with button":
+        case "Text with button": case "text with button":
             indexVar = 9;
             tempId = "#message-rich-2";
               break;
-          case "Nested order":
+        case "Nested order": case "nested order":
             indexVar = 9;
             tempId = "#message-rich-3";
              break;
-             case "View profile":
-              indexVar = 9;
-              tempId = "#message-rich-4";
+        case "View profile": case "view profile":
+            indexVar = 9;
+            tempId = "#message-rich-4";
                break;
-        case "Clickable buttons":
-          indexVar = 10;
-          tempId = "#message-buttons-6";
-            break;
-        case "Suprise me":
-          indexVar = 9;
-          tempId = "#message-rich-5";
-            break;
+        case "Clickable buttons": case "clickable buttons":
+            indexVar = 10;
+            tempId = "#message-buttons-6";
+              break;
+        case "Suprise me": case "suprise me":
+            indexVar = 9;
+            tempId = "#message-rich-5";
+              break;
         default:
-          indexVar = 6;
-          tempId = "#message-options";
+            indexVar = 6;
+            tempId = "#message-options";
       }
       this.render();
     },
@@ -162,8 +166,10 @@
         .replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3");
     }
   };
-
+ 
   chat.init();
+
+
 })();
 
 function submitText() {
@@ -172,3 +178,4 @@ function submitText() {
   document.getElementById("message-to-send").value = buttonText;
   document.getElementById("submit-button").click();
 }
+

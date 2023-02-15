@@ -181,6 +181,10 @@ u {
 .chat .chat-message {
   padding: 30px;
 }
+.chat .chat-history .my-message.card-list {
+  padding: 0;
+  background: transparent;
+}
 .chat .chat-message textarea {
   width: 100%;
   border: none;
@@ -273,4 +277,63 @@ u {
   content: " ";
   clear: both;
   height: 0;
+}
+
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.slider-prev {
+  left: -20px;
+  background: #ff8c69;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 1.7rem;
+  border: 1px solid;
+}
+
+.slider-next {
+  right: -20px;
+  background: #ff8c69;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 1.7rem;
+  border: 1px solid;
+}
+
+.slider-cards {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin-left:2rem;
+}
+
+.slider-card {
+  width: 300px;
+  min-width: 300px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

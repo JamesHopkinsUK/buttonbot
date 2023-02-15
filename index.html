@@ -14,8 +14,10 @@
     <p>Four buttons</p>
     <p>Misspelled button</p>
     <p>Unexpected button</p>
-    <p><strong>Rich text:</strong></p><br/>
+    <br/>
+    <p><strong>Rich text:</strong></p>
     <p>Card</p>
+    <p>Card list</p>
     <p>Rich text</p>
     <p>Text with button</p>
     <p>Nested order</p>
@@ -58,7 +60,8 @@
                   Unexpected button,
                   Card,
                   Rich text,
-                  Text with button
+                  Text with button,
+                  Card list
               </q>
           </div>
         </li>
@@ -176,6 +179,75 @@
       </div>
     </div>
   </li>
+</script>
+
+<script id="message-rich-7" type="text/x-handlebars-template">
+  <li>
+    <div class="my-message card-list">
+      <div class="slider-container">
+        <div class="slider-arrow slider-prev"><</div>
+        <div class="slider-cards">
+          <div class="slider-card">
+            <div class="card">
+              <img src="bot-icon.png" alt="Avatar" title="Button Bot">
+              <div class="info">
+                <div class="title">Button Bot 2.0</div>
+                <p>Architect & Engineer</p>
+                <button onclick="submitText()">View profile</button>
+              </div>
+            </div>
+          </div>
+          <div class="slider-card">
+            <div class="card">
+              <img src="bot-icon.png" alt="Avatar" title="Button Bot">
+              <div class="info">
+                <div class="title">James Bot 2.0</div>
+                <p>UI Developer</p>
+                <button onclick="submitText()">View profile</button>
+              </div>
+            </div>
+          </div>
+          <div class="slider-card">
+            <div class="card">
+              <img src="bot-icon.png" alt="Avatar" title="Button Bot">
+              <div class="info">
+                <div class="title">Brandon Bot 2.0</div>
+                <p>Senior Developer</p>
+                <button onclick="submitText()">View profile</button>
+              </div>
+            </div>
+          </div>
+          <div class="slider-card">
+            <div class="card">
+              <img src="bot-icon.png" alt="Avatar" title="Button Bot">
+              <div class="info">
+                <div class="title">Benoit Bot 2.0</div>
+                <p>CEO</p>
+                <button onclick="submitText()">View profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-arrow slider-next">></div>
+      </div>
+    </div>
+  </li>
+  <script>
+     //slider
+  const sliderContainer = document.querySelector('.slider-container');
+  const sliderCards = document.querySelector('.slider-cards');
+  const prevArrow = document.querySelector('.slider-prev');
+  const nextArrow = document.querySelector('.slider-next');
+  const cardWidth = sliderCards.querySelector('.slider-card').offsetWidth + 20; // add margin-right
+
+  prevArrow.addEventListener('click', () => {
+    sliderCards.scrollLeft -= cardWidth;
+  });
+
+  nextArrow.addEventListener('click', () => {
+    sliderCards.scrollLeft += cardWidth;
+  });
+  </script>
 </script>
 
 <script id="message-rich-5" type="text/x-handlebars-template">
