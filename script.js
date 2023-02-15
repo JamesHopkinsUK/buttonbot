@@ -11,7 +11,7 @@
       "Here is an example of four buttons:",
       "Here is a misspelled button:",
       "Here is an unexpected button:",
-      "Sorry I only speak in buttons...",
+      "Sorry I only speak in buttons... and other bits.",
       "Pick a card... any card",
       "Okay... Okay... One moment...",
       "Because you asked so nicely",
@@ -133,10 +133,22 @@
             indexVar = 9;
             tempId = "#message-rich-3";
              break;
-        case "View profile": case "view profile":
+        case "View profile": case "view profile": case "More about Button Bot":
             indexVar = 9;
-            tempId = "#message-rich-4";
+            tempId = "#profile-0";
                break;
+        case "More about James":
+            indexVar = 9;
+            tempId = "#profile-1";
+              break;  
+          case "More about Brandon":
+            indexVar = 9;
+            tempId = "#profile-2";
+              break;  
+          case "More about Benoit":
+            indexVar = 9;
+            tempId = "#profile-3";
+              break;       
         case "Clickable buttons": case "clickable buttons":
             indexVar = 10;
             tempId = "#message-buttons-6";
