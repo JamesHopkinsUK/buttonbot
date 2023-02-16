@@ -22,6 +22,8 @@
     <p>Text with button</p>
     <p>Nested order</p>
     <p>Clickable buttons</p>
+    <p>Same text button</p>
+    <p>Begin journey</p>
   </div>
   <div class="chat">
     <div class="chat-header clearfix">
@@ -50,18 +52,8 @@
             <span class="message-data-time">10:20 AM, Today</span>
           </div>
           <div class="message my-message">
-              <p>You can say:</p>
               <q>
-                  One button,
-                  Two buttons,
-                  Three buttons,
-                  Four buttons,
-                  Misspelled button,
-                  Unexpected button,
-                  Card,
-                  Rich text,
-                  Text with button,
-                  Card list
+                  Type a statment from the list on the right in the text area below to begin.
               </q>
           </div>
         </li>
@@ -164,6 +156,86 @@
         <button onclick="submitText()">Card</button>
         <button onclick="submitText()">Rich text</button>
         <button onclick="submitText()">Suprise me</button>
+      </div>
+  </li>
+</script>
+
+<script id="message-buttons-7" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message">
+        <p>This is an example of where a message may contain the same text as the button:</p>
+        <br/>
+        <button onclick="submitText()">may contain</button>
+        <button onclick="submitText()">text as button:</button>
+      </div>
+  </li>
+</script>
+
+<script id="you-clicked-0" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message">
+        <p>You clicked "May contain!"</p>
+      </div>
+  </li>
+</script>
+
+<script id="you-clicked-1" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message">
+        <p>You clicked "Text as button:"</p>
+      </div>
+  </li>
+</script>
+
+<script id="journey-0" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message">
+        <p>Welcome to the button journey, click begin to begin.</p>
+        <br/>
+        <button onclick="submitText()">begin</button>
+        <p>Or click exit to exit.</p>
+        <button onclick="submitText()">exit</button>
+      </div>
+  </li>
+</script>
+
+<script id="journey-1" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message">
+        <p>Cool, now where do you want to go?</p>
+        <br/>
+        <button onclick="submitText()">continue</button>
+        <button onclick="submitText()">exit</button>
+      </div>
+  </li>
+</script>
+
+<script id="journey-2" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message">
+        <p>Okay, I thought you would have chosen to exit by now</p>
+        <br/>
+        <button onclick="submitText()">keep going</button>
+        <button onclick="submitText()">exit</button>
+      </div>
+  </li>
+</script>
+
+<script id="journey-3" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message">
+        <p>Fine! Congratulations you made it to the end!</p>
+        <br/>
+        <button onclick="submitText()">exit</button>
+        <button onclick="submitText()">exit</button>
+      </div>
+  </li>
+</script>
+
+<script id="journey-exit" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message">
+        <p>You have reached the end of the journey</p>
       </div>
   </li>
 </script>
