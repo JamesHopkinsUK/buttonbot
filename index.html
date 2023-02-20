@@ -1,21 +1,18 @@
 <head>
-    <meta charset="utf-8">
-    <title>chatBot</title>
+  <meta charset="utf-8">
+  <title>chatBot</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <div class="container clearfix">
   <div class="input-items">
     <h4>You can say:</h4>
-    <p><strong>Buttons:</strong></p>
     <p>One button</p>
     <p>Two buttons</p>
     <p>Three buttons</p>
     <p>Four buttons</p>
     <p>Misspelled button</p>
     <p>Unexpected button</p>
-    <br/>
-    <p><strong>Rich text:</strong></p>
     <p>Card</p>
     <p>Card list</p>
     <p>Rich text</p>
@@ -24,6 +21,7 @@
     <p>Clickable buttons</p>
     <p>Same text button</p>
     <p>Begin journey</p>
+    <p>Click only</p>
   </div>
   <div class="chat">
     <div class="chat-header clearfix">
@@ -52,9 +50,9 @@
             <span class="message-data-time">10:20 AM, Today</span>
           </div>
           <div class="message my-message">
-              <q>
-                  Type a statment from the list on the right in the text area below to begin.
-              </q>
+            <q>
+              Type a statement from the list on the right in the text area below to begin.
+            </q>
           </div>
         </li>
       </ul>
@@ -240,6 +238,22 @@
   </li>
 </script>
 
+<script id="click-only" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message button-options">
+        <button onclick="clickContinue()">Click me</button>
+      </div>
+  </li>
+</script>
+
+<script id="click-only-0" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message">
+        <p>Well done! E2E successfully clicked the button!</p>
+      </div>
+  </li>
+</script>
+
 <script id="message-rich-0" type="text/x-handlebars-template">
   <li>
     <div class="card my-message">
@@ -305,20 +319,20 @@
     </div>
   </li>
   <script>
-     //slider
-  const sliderContainer = document.querySelector('.slider-container');
-  const sliderCards = document.querySelector('.slider-cards');
-  const prevArrow = document.querySelector('.slider-prev');
-  const nextArrow = document.querySelector('.slider-next');
-  const cardWidth = sliderCards.querySelector('.slider-card').offsetWidth + 20; // add margin-right
+    //slider
+    const sliderContainer = document.querySelector('.slider-container');
+    const sliderCards = document.querySelector('.slider-cards');
+    const prevArrow = document.querySelector('.slider-prev');
+    const nextArrow = document.querySelector('.slider-next');
+    const cardWidth = sliderCards.querySelector('.slider-card').offsetWidth + 20; // add margin-right
 
-  prevArrow.addEventListener('click', () => {
-    sliderCards.scrollLeft -= cardWidth;
-  });
+    prevArrow.addEventListener('click', () => {
+      sliderCards.scrollLeft -= cardWidth;
+    });
 
-  nextArrow.addEventListener('click', () => {
-    sliderCards.scrollLeft += cardWidth;
-  });
+    nextArrow.addEventListener('click', () => {
+      sliderCards.scrollLeft += cardWidth;
+    });
   </script>
 </script>
 
@@ -469,6 +483,8 @@
   </li>
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+  integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
 <script src="script.js"></script>

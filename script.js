@@ -18,6 +18,7 @@
       "Here is an example of buttons that share the same text values as the dialogue",
       "Click found!",
       "Cool - lets begin!",
+      "This is a click only example. You'll see the text area is currently disabled until you click the below button:",
     ],
     buttons: [
       "Button One",
@@ -202,14 +203,24 @@
           indexVar = 12;
           tempId = "#journey-2";
           break;
-          case "keep going":
+        case "keep going":
           indexVar = 12;
           tempId = "#journey-3";
           break;
-          case "exit":
-            indexVar = 12;
-            tempId = "#journey-exit";
-            break;
+        case "exit":
+          indexVar = 12;
+          tempId = "#journey-exit";
+          break;
+        case "click only":
+        case "Click only":
+          indexVar = 14;
+          tempId = "#click-only";
+          clickOnly();
+          break;
+        case "Click me":
+          indexVar = 12;
+          tempId = "#click-only-0";
+          break;
         //default
         default:
           indexVar = 6;
@@ -239,6 +250,18 @@
 function submitText() {
   var button = event.target;
   var buttonText = button.innerHTML;
+  document.getElementById("message-to-send").value = buttonText;
+  document.getElementById("submit-button").click();
+}
+
+function clickOnly() {
+  document.getElementById("message-to-send").disabled = true;
+}
+
+function clickContinue() {
+  var button = event.target;
+  var buttonText = button.innerHTML;
+  document.getElementById("message-to-send").disabled = false;
   document.getElementById("message-to-send").value = buttonText;
   document.getElementById("submit-button").click();
 }
