@@ -170,8 +170,8 @@
           indexVar = 10;
           tempId = "#message-buttons-6";
           break;
-        case "Suprise me":
-        case "suprise me":
+        case "Surprise me":
+        case "surprise me":
           indexVar = 9;
           tempId = "#message-rich-5";
           break;
