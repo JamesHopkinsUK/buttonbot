@@ -47,14 +47,19 @@
     render: function () {
       this.scrollToBottom();
       if (this.messageToSend.trim() !== "") {
-        var template = Handlebars.compile($("#message-template").html());
-        var context = {
-          messageOutput: this.messageToSend,
-          time: this.getCurrentTime(),
-        };
+        if (this.messageToSend.trim() !== "Click me no user response") {
+          var template = Handlebars.compile($("#message-template").html());
+          var context = {
+            messageOutput: this.messageToSend,
+            time: this.getCurrentTime(),
+          };
+          this.$chatHistoryList.append(template(context));
+          this.scrollToBottom();
+        } else {
+          //do nothing
+        }
 
-        this.$chatHistoryList.append(template(context));
-        this.scrollToBottom();
+
         this.$textarea.val("");
 
         // responses
@@ -217,7 +222,17 @@
           tempId = "#click-only";
           clickOnly();
           break;
+        case "click only no user":
+        case "Click only no user":
+          indexVar = 14;
+          tempId = "#click-only-1";
+          clickOnly();
+          break;
         case "Click me":
+          indexVar = 12;
+          tempId = "#click-only-0";
+          break;
+        case "Click me no user response":
           indexVar = 12;
           tempId = "#click-only-0";
           break;
