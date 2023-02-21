@@ -280,3 +280,9 @@ function clickContinue() {
   document.getElementById("message-to-send").value = buttonText;
   document.getElementById("submit-button").click();
 }
+
+// popup
+var popup = document.getElementById("cookie-popup");
+function closePopup() {
+  popup.style.display = "none";
+}
