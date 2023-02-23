@@ -77,6 +77,12 @@ u {
   color: #FFFFFF;
 }
 
+.input-items p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+
 .chat {
   width: 490px;
   float: left;
