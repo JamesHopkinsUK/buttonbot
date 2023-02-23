@@ -59,7 +59,6 @@
           //do nothing
         }
 
-
         this.$textarea.val("");
 
         // responses
@@ -189,7 +188,7 @@
           indexVar = 12;
           tempId = "#you-clicked-0";
           break;
-        case "text as button:":
+        case "text as the button:":
           indexVar = 12;
           tempId = "#you-clicked-1";
           break;
