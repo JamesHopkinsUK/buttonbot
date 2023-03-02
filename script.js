@@ -19,6 +19,8 @@
       "Click found!",
       "Cool - lets begin!",
       "This is a click only example. You'll see the text area is currently disabled until you click the below button:",
+      "Abracadabra - the button has gone!     (display:none)",
+      "Abracadabra - the button has gone!     (DOM Removed)",
     ],
     buttons: [
       "Button One",
@@ -235,6 +237,20 @@
           indexVar = 12;
           tempId = "#click-only-0";
           break;
+        case "Vanishing buttons":
+          indexVar = 9;
+          tempId = "#message-vanish-0";
+          break;
+        case "Click here to hide this button":
+          indexVar = 15;
+          tempId = "#message-vanish-1";
+          abraCadabra();  
+          break;
+        case "Click here to remove this button":
+          indexVar = 16;
+          tempId = "#message-vanish-2";
+          abraCadabraDom();  
+          break;
         //default
         default:
           indexVar = 6;
@@ -284,4 +300,12 @@ function clickContinue() {
 var popup = document.getElementById("cookie-popup");
 function closePopup() {
   popup.style.display = "none";
+}
+
+function abraCadabra() {
+  document.getElementById("dissapearing-button").style.display = "none";
+}
+
+function abraCadabraDom(){
+  document.getElementById("dissapearing-button-0").remove();
 }

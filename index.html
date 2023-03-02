@@ -23,6 +23,7 @@
     <p onclick="submitText()">Begin journey</p>
     <p onclick="submitText()">Click only</p>
     <p onclick="submitText()">Click only no user</p>
+    <p onclick="submitText()">Vanishing buttons</p>
   </div>
   <div class="chat">
     <div class="chat-header clearfix">
@@ -464,6 +465,34 @@
             </div>
         </div>
     </li>
+</script>
+
+<script id="message-vanish-0" type="text/x-handlebars-template">
+  <li>
+    <div id="dissapearing-button">
+      <div class="message my-message button-options">
+        <button onclick="submitText()">Click here to hide this button</button>
+      </div>
+    </div>
+  </li>
+</script>
+
+<script id="message-vanish-1" type="text/x-handlebars-template">
+  <li>
+    <div id="dissapearing-button-0">
+      <div class="message my-message button-options">
+        <button onclick="submitText()">Click here to remove this button</button>
+      </div>
+    </div>
+  </li>
+</script>
+
+<script id="message-vanish-2" type="text/x-handlebars-template">
+  <li>
+      <div class="message my-message">
+        <p>All buttons have now been removed!</p>
+      </div>
+  </li>
 </script>
 
 <script id="message-rich-2" type="text/x-handlebars-template">
