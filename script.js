@@ -186,6 +186,11 @@
           indexVar = 11;
           tempId = "#message-buttons-7";
           break;
+        case "Same text button reverse":
+        case "same text button reverse":
+          indexVar = 11;
+          tempId = "#message-buttons-7-reverse";
+          break;
         case "may contain":
           indexVar = 12;
           tempId = "#you-clicked-0";
